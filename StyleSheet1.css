@@ -1,0 +1,31 @@
+﻿#login {
+    height: 100px;
+    width: 200px;
+    background-color:blanchedalmond;
+    float:left;
+    margin:auto;
+}
+#register {
+    height: 100px;
+    width: 200px;
+    background-color: #ffd800;
+    float: left;
+    margin: auto;
+}
+input[type=text] {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid red;
+    border-radius: 4px;
+}
+.tabela {
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: khaki;
+    border-collapse:collapse;
+}
+.tabela td {
+    border: 1px solid blue;
+}

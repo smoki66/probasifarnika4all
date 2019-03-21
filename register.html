@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Registracija</title>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="Form" action="upis.aspx" method="post" onsubmit="return proveri()">
+        <p> Ime  <input type="text" name="ime"></p>
+        <p> Prezime  <input type="text" name="prezime"></p>
+        <p> Username  <input type="text" name="username"></p>
+        <p> Password  <input type="password" name="password"></p>
+        <p> Opet Password <input type="password" name="password2"></p>
+        <p> Datum  <input type="date" name="datum"></p>
+        <p> e-mail  <input type="email" name="email"></p>
+        <input id="Submit1" type="submit" value="submit">
+    </form>
+    <script>
+        function proveri() {
+            var x = document.forms["Form"]["ime"].value;
+            if (x == "") {
+                alert("Ne moze prazno!");
+                return false;
+            }
+            var p1 = document.forms["Form"]["password"].value;
+            var p2 = document.forms["Form"]["password2"].value;
+            if (p1 != p2) {
+                alert("Sifre nisu iste!!");
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
